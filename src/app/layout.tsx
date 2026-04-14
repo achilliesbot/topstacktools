@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   },
   description:
     "Independent, in-depth reviews and comparisons of the best SaaS and business tools. No pay-for-placement. No fluff. Just honest analysis from real testing.",
+  other: {
+    "impact-site-verification": "0e4833c9-04d4-435f-940e-7f08b21f218a",
+    "google-site-verification": "bYskhLjuY7A8H5sUWliatPYFJw4IvgCZksxSyXVJeCs",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -45,6 +49,9 @@ function Navbar() {
           </Link>
           <Link href="/#comparisons" className="text-sm font-medium text-muted hover:text-charcoal transition-colors">
             Comparisons
+          </Link>
+          <Link href="/blog" className="text-sm font-medium text-muted hover:text-charcoal transition-colors">
+            Blog
           </Link>
           <Link href="/about" className="text-sm font-medium text-muted hover:text-charcoal transition-colors">
             About
@@ -140,6 +147,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${dmSans.variable} h-full`}>
+      <head>
+        <meta name="impact-site-verification" content="0e4833c9-04d4-435f-940e-7f08b21f218a" />
+      </head>
       <body className="min-h-full flex flex-col font-sans antialiased">
         <Navbar />
         <main className="flex-1">{children}</main>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://topstacktools.com/sitemap.xml
