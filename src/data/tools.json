@@ -1,0 +1,258 @@
+[
+  {
+    "slug": "hubspot-crm",
+    "name": "HubSpot CRM",
+    "category": "crm",
+    "rating": 8.5,
+    "brandColor": "#FF7A59",
+    "editorChoice": false,
+    "lastUpdated": "2026-04-10",
+    "verdict": "The best free CRM for small businesses that want to scale without switching platforms.",
+    "description": "HubSpot CRM is a powerful, free customer relationship management platform that helps businesses organize contacts, track deals, and automate sales workflows. Its generous free tier and intuitive interface make it ideal for small teams getting started with CRM.",
+    "pros": [
+      "Generous free tier with core CRM features",
+      "Intuitive drag-and-drop deal pipeline",
+      "Excellent email tracking and templates",
+      "Seamless integration with HubSpot's marketing and service hubs",
+      "Great mobile app for on-the-go sales teams"
+    ],
+    "cons": [
+      "Paid plans get expensive quickly",
+      "Reporting is limited on free plan",
+      "Can feel overwhelming with all the add-on options",
+      "Some advanced automation requires premium tiers"
+    ],
+    "pricing": [
+      { "plan": "Free", "price": "$0/mo", "features": "Contact management, deal pipeline, email tracking, basic reporting" },
+      { "plan": "Starter", "price": "$20/mo", "features": "Everything in Free plus goals, simple automation, conversation routing" },
+      { "plan": "Professional", "price": "$500/mo", "features": "Advanced automation, custom reporting, forecasting, sequences" },
+      { "plan": "Enterprise", "price": "$1,200/mo", "features": "Advanced permissions, predictive lead scoring, custom objects" }
+    ],
+    "features": [
+      "Contact & company management",
+      "Deal pipeline tracking",
+      "Email tracking & notifications",
+      "Meeting scheduler",
+      "Live chat & chatbots",
+      "Reporting dashboard",
+      "Marketing email integration",
+      "Mobile CRM app"
+    ],
+    "whoItsFor": "HubSpot CRM is ideal for small to mid-sized businesses that want a powerful CRM without upfront costs. It works especially well for teams already using or considering HubSpot's broader marketing and service tools.",
+    "affiliateUrl": "https://topstacktools.com/go/hubspot",
+    "ctaText": "Try HubSpot Free"
+  },
+  {
+    "slug": "notion",
+    "name": "Notion",
+    "category": "project-management",
+    "rating": 9.0,
+    "brandColor": "#000000",
+    "editorChoice": true,
+    "lastUpdated": "2026-04-12",
+    "verdict": "The most flexible workspace for teams who want docs, wikis, and project management in one place.",
+    "description": "Notion is an all-in-one workspace that combines note-taking, knowledge management, project tracking, and collaboration. Its block-based editor and powerful database system make it endlessly customizable for any workflow.",
+    "pros": [
+      "Incredibly flexible \u2014 adapts to almost any workflow",
+      "Beautiful, clean interface",
+      "Powerful database and relational features",
+      "Great for both personal and team use",
+      "Strong template ecosystem"
+    ],
+    "cons": [
+      "Can be slow with very large databases",
+      "Steep learning curve for advanced features",
+      "Offline mode is still limited",
+      "Search could be faster and more accurate"
+    ],
+    "pricing": [
+      { "plan": "Free", "price": "$0/mo", "features": "Unlimited pages, 7-day page history, basic integrations" },
+      { "plan": "Plus", "price": "$10/mo", "features": "Unlimited file uploads, 30-day history, guests" },
+      { "plan": "Business", "price": "$18/mo", "features": "SAML SSO, advanced permissions, bulk PDF export" },
+      { "plan": "Enterprise", "price": "Custom", "features": "Advanced security, audit log, dedicated support" }
+    ],
+    "features": [
+      "Block-based document editor",
+      "Relational databases",
+      "Kanban boards & timelines",
+      "Wiki & knowledge base",
+      "Team collaboration",
+      "API & integrations",
+      "Templates gallery",
+      "AI writing assistant"
+    ],
+    "whoItsFor": "Notion is perfect for solopreneurs and small teams who want a single tool for notes, docs, project management, and knowledge bases. It shines when you need flexibility over rigid structure.",
+    "affiliateUrl": "https://topstacktools.com/go/notion",
+    "ctaText": "Try Notion Free"
+  },
+  {
+    "slug": "jasper-ai",
+    "name": "Jasper AI",
+    "category": "ai-tools",
+    "rating": 8.0,
+    "brandColor": "#7C3AED",
+    "editorChoice": false,
+    "lastUpdated": "2026-04-08",
+    "verdict": "The most polished AI writing tool for marketing teams that need brand-consistent content at scale.",
+    "description": "Jasper AI is an enterprise-grade AI content platform designed for marketing teams. It goes beyond generic AI writing by offering brand voice training, campaign workflows, and team collaboration features that make it a serious content production tool.",
+    "pros": [
+      "Excellent brand voice customization",
+      "Purpose-built marketing templates",
+      "Strong team collaboration features",
+      "Chrome extension works everywhere",
+      "Good image generation capabilities"
+    ],
+    "cons": [
+      "Expensive compared to general AI tools",
+      "Output still needs human editing",
+      "Word limits can feel restrictive",
+      "UI can be complex for simple tasks"
+    ],
+    "pricing": [
+      { "plan": "Creator", "price": "$49/mo", "features": "1 seat, brand voice, SEO mode, browser extension" },
+      { "plan": "Pro", "price": "$69/mo", "features": "Up to 5 seats, 3 brand voices, collaboration tools" },
+      { "plan": "Business", "price": "Custom", "features": "Unlimited brand voices, API access, custom workflows" }
+    ],
+    "features": [
+      "AI content generation",
+      "Brand voice training",
+      "Marketing campaign workflows",
+      "50+ content templates",
+      "Chrome browser extension",
+      "AI image generation",
+      "Team collaboration",
+      "SEO optimization mode"
+    ],
+    "whoItsFor": "Jasper AI is best for marketing teams and content-heavy businesses that need to produce consistent, on-brand content at scale. If you're a solo blogger, cheaper alternatives may suffice.",
+    "affiliateUrl": "https://topstacktools.com/go/jasper",
+    "ctaText": "Try Jasper Free"
+  },
+  {
+    "slug": "hostinger",
+    "name": "Hostinger",
+    "category": "website-builders",
+    "rating": 8.5,
+    "brandColor": "#673DE6",
+    "editorChoice": false,
+    "lastUpdated": "2026-04-09",
+    "verdict": "The best value web hosting for small businesses that want speed and simplicity without the price tag.",
+    "description": "Hostinger offers affordable web hosting with an intuitive website builder, making it easy for non-technical users to get online fast. With strong performance, free domains, and AI-powered site building tools, it punches well above its price point.",
+    "pros": [
+      "Extremely affordable pricing",
+      "Fast loading speeds with LiteSpeed servers",
+      "AI website builder included",
+      "Free domain and SSL certificate",
+      "24/7 customer support"
+    ],
+    "cons": [
+      "Cheapest plan has limited resources",
+      "No phone support",
+      "Renewal prices are higher than intro rates",
+      "Limited advanced developer features"
+    ],
+    "pricing": [
+      { "plan": "Single", "price": "$2.99/mo", "features": "1 website, 50GB storage, free SSL" },
+      { "plan": "Premium", "price": "$2.99/mo", "features": "100 websites, 100GB storage, free domain" },
+      { "plan": "Business", "price": "$3.99/mo", "features": "100 websites, 200GB storage, daily backups, CDN" },
+      { "plan": "Cloud Startup", "price": "$9.99/mo", "features": "300GB storage, dedicated resources, priority support" }
+    ],
+    "features": [
+      "AI website builder",
+      "WordPress hosting",
+      "Free domain name",
+      "Free SSL certificate",
+      "LiteSpeed web server",
+      "99.9% uptime guarantee",
+      "Email hosting",
+      "One-click app installer"
+    ],
+    "whoItsFor": "Hostinger is ideal for solopreneurs, small businesses, and beginners who want reliable hosting and a website builder at a budget-friendly price. It's not for large enterprise sites with complex requirements.",
+    "affiliateUrl": "https://topstacktools.com/go/hostinger",
+    "ctaText": "Get Hostinger Deal"
+  },
+  {
+    "slug": "semrush",
+    "name": "Semrush",
+    "category": "seo-marketing",
+    "rating": 9.0,
+    "brandColor": "#FF622D",
+    "editorChoice": true,
+    "lastUpdated": "2026-04-11",
+    "verdict": "The gold standard for SEO and competitive research \u2014 worth every penny for serious marketers.",
+    "description": "Semrush is the industry-leading SEO and digital marketing toolkit. It provides comprehensive keyword research, competitor analysis, site auditing, rank tracking, and content marketing tools used by agencies and in-house teams worldwide.",
+    "pros": [
+      "Most comprehensive SEO toolset available",
+      "Excellent competitor analysis features",
+      "Powerful keyword research database",
+      "Great site audit and technical SEO tools",
+      "Regular feature updates and improvements"
+    ],
+    "cons": [
+      "Expensive for solopreneurs",
+      "Can be overwhelming for beginners",
+      "Data limits on lower plans",
+      "Some tools have a learning curve"
+    ],
+    "pricing": [
+      { "plan": "Pro", "price": "$139/mo", "features": "5 projects, 500 keywords, 10K results per report" },
+      { "plan": "Guru", "price": "$249/mo", "features": "15 projects, 1,500 keywords, content marketing tools" },
+      { "plan": "Business", "price": "$499/mo", "features": "40 projects, 5,000 keywords, API access, share of voice" }
+    ],
+    "features": [
+      "Keyword research & tracking",
+      "Competitor analysis",
+      "Site audit & technical SEO",
+      "Backlink analysis",
+      "Content marketing toolkit",
+      "Social media management",
+      "PPC research",
+      "Local SEO tools"
+    ],
+    "whoItsFor": "Semrush is made for SEO professionals, digital marketing agencies, and businesses serious about organic growth. If SEO is a core part of your strategy, this is the tool to invest in.",
+    "affiliateUrl": "https://topstacktools.com/go/semrush",
+    "ctaText": "Try Semrush Free"
+  },
+  {
+    "slug": "systeme-io",
+    "name": "Systeme.io",
+    "category": "automation",
+    "rating": 8.0,
+    "brandColor": "#2563EB",
+    "editorChoice": false,
+    "lastUpdated": "2026-04-07",
+    "verdict": "The most affordable all-in-one marketing platform for solopreneurs who want funnels, email, and courses in one tool.",
+    "description": "Systeme.io is an all-in-one online business platform that combines sales funnels, email marketing, online courses, website building, and automation. Its generous free plan and simple interface make it ideal for bootstrapped entrepreneurs.",
+    "pros": [
+      "Very generous free plan (2,000 contacts)",
+      "All-in-one platform eliminates tool sprawl",
+      "Easy to use funnel and page builder",
+      "Built-in affiliate program management",
+      "No transaction fees on any plan"
+    ],
+    "cons": [
+      "Design templates are basic",
+      "Limited third-party integrations",
+      "Fewer advanced features than specialists",
+      "Email deliverability could be better"
+    ],
+    "pricing": [
+      { "plan": "Free", "price": "$0/mo", "features": "2,000 contacts, 3 funnels, 1 course, unlimited emails" },
+      { "plan": "Startup", "price": "$27/mo", "features": "5,000 contacts, 10 funnels, 5 courses, A/B testing" },
+      { "plan": "Webinar", "price": "$47/mo", "features": "10,000 contacts, 50 funnels, webinars, coupon codes" },
+      { "plan": "Unlimited", "price": "$97/mo", "features": "Unlimited everything, priority support, migration" }
+    ],
+    "features": [
+      "Sales funnel builder",
+      "Email marketing automation",
+      "Online course platform",
+      "Website & blog builder",
+      "Affiliate program management",
+      "Payment processing",
+      "Workflow automation",
+      "Deadline funnels"
+    ],
+    "whoItsFor": "Systeme.io is perfect for solopreneurs, coaches, and course creators who want an affordable all-in-one platform without juggling multiple subscriptions. Best for those starting out or operating on a tight budget.",
+    "affiliateUrl": "https://systeme.io/?sa=sa026881943899075a2e173792837d9dece54a7e8b",
+    "ctaText": "Try Systeme.io Free"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "crm",
+    "name": "CRM",
+    "description": "Customer relationship management tools to organize contacts, track deals, and grow your sales pipeline.",
+    "icon": "users"
+  },
+  {
+    "slug": "project-management",
+    "name": "Project Management",
+    "description": "Tools to plan, track, and collaborate on projects with your team — from kanban boards to Gantt charts.",
+    "icon": "layout"
+  },
+  {
+    "slug": "ai-tools",
+    "name": "AI Tools",
+    "description": "Artificial intelligence tools for writing, image generation, automation, and business productivity.",
+    "icon": "sparkles"
+  },
+  {
+    "slug": "website-builders",
+    "name": "Website Builders",
+    "description": "Platforms and hosting services to build, launch, and manage your business website without coding.",
+    "icon": "globe"
+  },
+  {
+    "slug": "seo-marketing",
+    "name": "SEO & Marketing",
+    "description": "Search engine optimization and digital marketing tools to drive organic traffic and grow your audience.",
+    "icon": "trending-up"
+  },
+  {
+    "slug": "automation",
+    "name": "Marketing Automation",
+    "description": "All-in-one platforms for email marketing, sales funnels, and workflow automation.",
+    "icon": "zap"
+  },
+  {
+    "slug": "email-marketing",
+    "name": "Email Marketing",
+    "description": "Dedicated email marketing platforms for newsletters, drip campaigns, and subscriber management.",
+    "icon": "mail"
+  },
+  {
+    "slug": "accounting",
+    "name": "Accounting",
+    "description": "Bookkeeping and accounting software to manage invoices, expenses, and financial reporting.",
+    "icon": "calculator"
+  }
+]

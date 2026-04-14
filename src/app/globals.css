@@ -1,26 +1,115 @@
 @import "tailwindcss";
 
 :root {
+  /* Warm premium palette — inspired by Medvi's organic feel */
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1a1a1a;
+  --accent: #4a6741;
+  --accent-hover: #3d5736;
+  --accent-light: #eef3ec;
+  --muted: #6b7280;
+  --muted-light: #9ca3af;
+  --border: #e8e5e1;
+  --surface: #f9f7f4;
+  --surface-warm: #f5f0eb;
+  --green: #4a6741;
+  --green-light: #eef3ec;
+  --red: #b91c1c;
+  --red-light: #fef2f2;
+  --yellow: #92742e;
+  --yellow-light: #faf5eb;
+  --amber: #c6a673;
+  --gold: #c6a673;
+  --charcoal: #38312c;
+  --evergreen: #779d7c;
+  --wood: #c6a673;
+  --sand: #f5eee9;
+  --stone: #f7f4f0;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-light: var(--accent-light);
+  --color-muted: var(--muted);
+  --color-muted-light: var(--muted-light);
+  --color-border: var(--border);
+  --color-surface: var(--surface);
+  --color-surface-warm: var(--surface-warm);
+  --color-green: var(--green);
+  --color-green-light: var(--green-light);
+  --color-red: var(--red);
+  --color-red-light: var(--red-light);
+  --color-yellow: var(--yellow);
+  --color-yellow-light: var(--yellow-light);
+  --color-amber: var(--amber);
+  --color-gold: var(--gold);
+  --color-charcoal: var(--charcoal);
+  --color-evergreen: var(--evergreen);
+  --color-wood: var(--wood);
+  --color-sand: var(--sand);
+  --color-stone: var(--stone);
+  --font-sans: var(--font-display);
+  --font-display: var(--font-display);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-33.333%); }
+}
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+/* Card hover lift */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+}
+
+/* Score bar fill */
+.score-fill {
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Pill button base */
+.btn-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 14px 40px;
+  transition: all 0.2s ease;
+}
+.btn-pill:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(22, 32, 25, 0.1);
+}
+
+/* Zoom reveal for images */
+.img-zoom-container {
+  overflow: hidden;
+}
+.img-zoom-container img {
+  transition: transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.img-zoom-container:hover img {
+  transform: scale(1.05);
 }

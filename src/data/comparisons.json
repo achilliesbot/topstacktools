@@ -1,0 +1,143 @@
+[
+  {
+    "slug": "notion-vs-monday",
+    "title": "Notion vs Monday.com",
+    "description": "Two top project management tools compared — flexibility vs structure. Which one fits your team?",
+    "toolA": {
+      "name": "Notion",
+      "slug": "notion",
+      "rating": 9.0,
+      "price": "Free - $18/mo",
+      "bestFor": "Flexible docs + project management",
+      "affiliateUrl": "https://topstacktools.com/go/notion",
+      "scores": {
+        "ease": 7,
+        "features": 9,
+        "value": 9,
+        "support": 7,
+        "integrations": 7
+      }
+    },
+    "toolB": {
+      "name": "Monday.com",
+      "slug": "monday",
+      "rating": 8.5,
+      "price": "$9 - $24/seat/mo",
+      "bestFor": "Structured team project tracking",
+      "affiliateUrl": "https://topstacktools.com/go/monday",
+      "scores": {
+        "ease": 9,
+        "features": 8,
+        "value": 7,
+        "support": 9,
+        "integrations": 9
+      }
+    },
+    "verdict": "Choose Notion if you want a flexible all-in-one workspace for docs and projects. Choose Monday.com if your team needs structured project tracking with strong automations and integrations.",
+    "category": "project-management",
+    "comparisonTable": [
+      { "feature": "Free Plan", "toolA": "Yes (generous)", "toolB": "Yes (limited)" },
+      { "feature": "Kanban Boards", "toolA": "Yes", "toolB": "Yes" },
+      { "feature": "Gantt Charts", "toolA": "Timeline view", "toolB": "Yes (native)" },
+      { "feature": "Document Editor", "toolA": "Excellent", "toolB": "Basic" },
+      { "feature": "Automations", "toolA": "Limited", "toolB": "Extensive" },
+      { "feature": "Integrations", "toolA": "Growing (API)", "toolB": "200+ native" },
+      { "feature": "Mobile App", "toolA": "Good", "toolB": "Excellent" },
+      { "feature": "Learning Curve", "toolA": "Moderate", "toolB": "Easy" }
+    ]
+  },
+  {
+    "slug": "hubspot-vs-salesforce",
+    "title": "HubSpot vs Salesforce",
+    "description": "The CRM battle for small business: free and friendly vs powerful and enterprise-grade.",
+    "toolA": {
+      "name": "HubSpot",
+      "slug": "hubspot-crm",
+      "rating": 8.5,
+      "price": "Free - $1,200/mo",
+      "bestFor": "Small businesses & startups",
+      "affiliateUrl": "https://topstacktools.com/go/hubspot",
+      "scores": {
+        "ease": 9,
+        "features": 8,
+        "value": 9,
+        "support": 8,
+        "integrations": 8
+      }
+    },
+    "toolB": {
+      "name": "Salesforce",
+      "slug": "salesforce",
+      "rating": 8.5,
+      "price": "$25 - $300/user/mo",
+      "bestFor": "Enterprise & scaling teams",
+      "affiliateUrl": "https://topstacktools.com/go/salesforce",
+      "scores": {
+        "ease": 6,
+        "features": 10,
+        "value": 6,
+        "support": 8,
+        "integrations": 10
+      }
+    },
+    "verdict": "HubSpot wins for small businesses and startups with its free CRM and gentle learning curve. Salesforce is the choice for larger teams that need deep customization and enterprise-grade features.",
+    "category": "crm",
+    "comparisonTable": [
+      { "feature": "Free Plan", "toolA": "Yes (excellent)", "toolB": "No" },
+      { "feature": "Contact Management", "toolA": "Excellent", "toolB": "Excellent" },
+      { "feature": "Sales Automation", "toolA": "Good", "toolB": "Excellent" },
+      { "feature": "Reporting", "toolA": "Good", "toolB": "Excellent" },
+      { "feature": "Customization", "toolA": "Moderate", "toolB": "Extensive" },
+      { "feature": "Integrations", "toolA": "1,000+", "toolB": "3,000+" },
+      { "feature": "Learning Curve", "toolA": "Easy", "toolB": "Steep" },
+      { "feature": "Mobile App", "toolA": "Good", "toolB": "Excellent" }
+    ]
+  },
+  {
+    "slug": "jasper-vs-chatgpt",
+    "title": "Jasper vs ChatGPT",
+    "description": "Purpose-built marketing AI vs the world's most popular chatbot — which creates better business content?",
+    "toolA": {
+      "name": "Jasper",
+      "slug": "jasper-ai",
+      "rating": 8.0,
+      "price": "$49 - $69/mo",
+      "bestFor": "Marketing teams & brand content",
+      "affiliateUrl": "https://topstacktools.com/go/jasper",
+      "scores": {
+        "ease": 8,
+        "features": 8,
+        "value": 6,
+        "support": 8,
+        "integrations": 7
+      }
+    },
+    "toolB": {
+      "name": "ChatGPT",
+      "slug": "chatgpt",
+      "rating": 9.0,
+      "price": "Free - $20/mo",
+      "bestFor": "General-purpose AI assistance",
+      "affiliateUrl": "https://topstacktools.com/go/chatgpt",
+      "scores": {
+        "ease": 9,
+        "features": 9,
+        "value": 10,
+        "support": 6,
+        "integrations": 7
+      }
+    },
+    "verdict": "ChatGPT offers incredible value for general AI writing and tasks. Jasper is worth the premium if you need brand-consistent marketing content with team collaboration features built in.",
+    "category": "ai-tools",
+    "comparisonTable": [
+      { "feature": "Brand Voice", "toolA": "Yes (trained)", "toolB": "Manual prompting" },
+      { "feature": "Marketing Templates", "toolA": "50+", "toolB": "None (freeform)" },
+      { "feature": "Team Collaboration", "toolA": "Built-in", "toolB": "Limited" },
+      { "feature": "Image Generation", "toolA": "Yes", "toolB": "Yes (DALL-E)" },
+      { "feature": "SEO Features", "toolA": "Built-in", "toolB": "Via plugins" },
+      { "feature": "API Access", "toolA": "Business plan", "toolB": "Yes" },
+      { "feature": "Free Plan", "toolA": "7-day trial", "toolB": "Yes (GPT-3.5)" },
+      { "feature": "General Knowledge", "toolA": "Limited", "toolB": "Excellent" }
+    ]
+  }
+]
