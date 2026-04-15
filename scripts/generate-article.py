@@ -14,8 +14,8 @@ import signal
 import time
 from datetime import datetime
 
-ANTHROPIC_API_KEY = "REDACTED_ANTHROPIC_KEY"
-OPENAI_API_KEY = "REDACTED_OPENAI_KEY"
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 MODEL = "claude-sonnet-4-20250514"
 OPENAI_MODEL = "gpt-4o-mini"
 
