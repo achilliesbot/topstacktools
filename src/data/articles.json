@@ -406,14 +406,7 @@
   {
     "slug": "top-notion-templates-small-business-2026",
     "title": "Top Notion Templates for Small Business in 2026",
-    "metaDescription": "Discover the best Notion templates for small businesses in 2026. From CRM to project management, these templates will streamline your workflow.",
     "category": "Productivity",
-    "tags": [
-      "notion",
-      "templates",
-      "small business",
-      "productivity"
-    ],
     "author": "TopStackTools",
     "affiliateUrl": "https://affiliate.notion.so/topstacktools",
     "ctaText": "Try Notion Free",
@@ -423,19 +416,14 @@
       "hubspot-crm",
       "systeme-io"
     ],
-    "date": "2026-04-15"
+    "date": "2026-04-15",
+    "description": "Discover the best Notion templates for small businesses in 2026. From CRM to project management, these templates will streamline your workflow.",
+    "readTime": "3 min read"
   },
   {
     "slug": "best-ai-writing-tools-2026",
     "title": "Best AI Writing Tools for Content Marketing in 2026",
-    "metaDescription": "Compare the top AI writing tools for content marketing in 2026. From SEO content to social media copy, find the right tool for your needs.",
     "category": "AI Tools",
-    "tags": [
-      "ai writing",
-      "content marketing",
-      "seo",
-      "copywriting"
-    ],
     "author": "TopStackTools",
     "affiliateUrl": "https://usetopseo.com",
     "ctaText": "Try TopSEO Free",
@@ -445,19 +433,14 @@
       "semrush",
       "systeme-io"
     ],
-    "date": "2026-04-15"
+    "date": "2026-04-15",
+    "description": "Compare the top AI writing tools for content marketing in 2026. From SEO content to social media copy, find the right tool for your needs.",
+    "readTime": "3 min read"
   },
   {
     "slug": "how-to-start-affiliate-marketing-2026",
     "title": "How to Start Affiliate Marketing in 2026: Complete Guide",
-    "metaDescription": "Learn how to start affiliate marketing in 2026. Step-by-step guide covering niche selection, content strategy, and monetization.",
     "category": "Marketing",
-    "tags": [
-      "affiliate marketing",
-      "passive income",
-      "content strategy",
-      "monetization"
-    ],
     "author": "TopStackTools",
     "affiliateUrl": "https://www.systeme.io/?sa=sa026881943899075a2e173792837d9dece54a7e8b",
     "ctaText": "Try Systeme.io Free",
@@ -467,6 +450,8 @@
       "hubspot-crm",
       "hostinger"
     ],
-    "date": "2026-04-15"
+    "date": "2026-04-15",
+    "description": "Learn how to start affiliate marketing in 2026. Step-by-step guide covering niche selection, content strategy, and monetization.",
+    "readTime": "3 min read"
   }
 ]
