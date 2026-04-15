@@ -183,6 +183,28 @@ export default async function ArticlePage({
           />
         </ScrollReveal>
 
+        {/* Mid-article inline CTA */}
+        {article.affiliateUrl && (
+          <div className="my-10 flex items-center gap-4 rounded-2xl border border-evergreen/20 bg-evergreen/5 p-5">
+            <div className="flex-1">
+              <p className="text-sm font-semibold text-charcoal">
+                {article.ctaText}
+              </p>
+              <p className="mt-1 text-xs text-muted">
+                Free to start. No credit card required.
+              </p>
+            </div>
+            <a
+              href={article.affiliateUrl}
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="btn-pill bg-evergreen text-white text-sm whitespace-nowrap"
+            >
+              Try Free
+            </a>
+          </div>
+        )}
+
         {/* Affiliate CTA Box */}
         {article.affiliateUrl && (
           <ScrollReveal>
