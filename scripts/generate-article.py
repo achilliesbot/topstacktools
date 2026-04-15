@@ -15,7 +15,9 @@ import time
 from datetime import datetime
 
 ANTHROPIC_API_KEY = "REDACTED_ANTHROPIC_KEY"
+OPENAI_API_KEY = "REDACTED_OPENAI_KEY"
 MODEL = "claude-sonnet-4-20250514"
+OPENAI_MODEL = "gpt-4o-mini"
 
 SITE_DIR = "/home/ubuntu/topstacktools"
 ARTICLES_PATH = os.path.join(SITE_DIR, "src/data/articles.json")
@@ -133,15 +135,10 @@ def pick_category(topic):
     return "Tools & Software"
 
 
-def generate_article_content(topic):
-    """Call Claude API to generate the article."""
-    import anthropic
-
-    client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
-
+def _build_article_prompt(topic):
+    """Build the article generation prompt."""
     tools_list = "\n".join([f"- {t['name']} ({t['category']}) - review at {SITE_URL}/reviews/{t['slug']}" for t in REVIEWED_TOOLS])
-
-    prompt = f"""Write a high-quality SEO blog article on the topic: "{topic}"
+    return f"""Write a high-quality SEO blog article on the topic: "{topic}"
 
 Target audience: Small business owners, solopreneurs, and online entrepreneurs researching software tools.
 
@@ -163,13 +160,47 @@ Requirements:
 - No markdown, no code fences, no wrapper tags
 - Make it genuinely useful — someone reading this should learn something they didn't know"""
 
+
+def _generate_with_anthropic(prompt):
+    """Try Anthropic API first."""
+    import anthropic
+    client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
     response = client.messages.create(
         model=MODEL,
         max_tokens=4096,
         messages=[{"role": "user", "content": prompt}],
     )
+    return response.content[0].text.strip()
 
-    content = response.content[0].text.strip()
+
+def _generate_with_openai(prompt):
+    """Fallback to OpenAI API."""
+    import requests as req
+    r = req.post("https://api.openai.com/v1/chat/completions",
+        headers={"Authorization": f"Bearer {OPENAI_API_KEY}", "Content-Type": "application/json"},
+        json={"model": OPENAI_MODEL, "messages": [{"role": "user", "content": prompt}], "max_tokens": 4096},
+        timeout=60
+    )
+    r.raise_for_status()
+    return r.json()["choices"][0]["message"]["content"].strip()
+
+
+def generate_article_content(topic):
+    """Generate article content — tries Anthropic first, falls back to OpenAI."""
+    prompt = _build_article_prompt(topic)
+
+    # Try Anthropic first
+    try:
+        content = _generate_with_anthropic(prompt)
+        print(f"  Generated via Anthropic ({MODEL})")
+    except Exception as e:
+        err_msg = str(e)
+        if "credit balance" in err_msg.lower() or "billing" in err_msg.lower():
+            print(f"  Anthropic credits depleted, falling back to OpenAI...")
+        else:
+            print(f"  Anthropic error ({err_msg[:100]}), falling back to OpenAI...")
+        content = _generate_with_openai(prompt)
+        print(f"  Generated via OpenAI ({OPENAI_MODEL})")
 
     # Clean up any markdown code fences if present
     if content.startswith("```html"):
@@ -185,10 +216,6 @@ Requirements:
 
 def generate_title_and_description(topic, article_html):
     """Generate an SEO-optimized title and meta description."""
-    import anthropic
-
-    client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
-
     prompt = f"""Given this blog article topic: "{topic}"
 
 Generate:
@@ -198,13 +225,11 @@ Generate:
 Return ONLY valid JSON in this exact format, nothing else:
 {{"title": "Your Title Here", "description": "Your meta description here."}}"""
 
-    response = client.messages.create(
-        model=MODEL,
-        max_tokens=256,
-        messages=[{"role": "user", "content": prompt}],
-    )
+    try:
+        text = _generate_with_anthropic(prompt)
+    except Exception:
+        text = _generate_with_openai(prompt)
 
-    text = response.content[0].text.strip()
     # Extract JSON from response
     match = re.search(r'\{[^}]+\}', text, re.DOTALL)
     if match:

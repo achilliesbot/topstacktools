@@ -24,9 +24,15 @@ export async function generateMetadata({
     openGraph: {
       title: `${article.title} | TopStackTools`,
       description: article.description,
+      url: `https://topstacktools.com/blog/${slug}`,
       type: "article",
       publishedTime: article.date,
       authors: [article.author],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${article.title} | TopStackTools`,
+      description: article.description,
     },
   };
 }
@@ -50,6 +56,7 @@ export default async function ArticlePage({
     headline: article.title,
     description: article.description,
     datePublished: article.date,
+    url: `https://topstacktools.com/blog/${slug}`,
     author: {
       "@type": "Organization",
       name: article.author,
@@ -57,6 +64,11 @@ export default async function ArticlePage({
     publisher: {
       "@type": "Organization",
       name: "TopStackTools",
+      url: "https://topstacktools.com",
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://topstacktools.com/blog/${slug}`,
     },
   };
 

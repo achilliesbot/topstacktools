@@ -24,7 +24,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
+    url: "https://topstacktools.com",
     siteName: "TopStackTools",
+    title: "TopStackTools — Honest SaaS Reviews for Growing Businesses",
+    description:
+      "Independent, in-depth reviews and comparisons of the best SaaS and business tools. No pay-for-placement. No fluff.",
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "TopStackTools — Honest SaaS Reviews for Growing Businesses",
     description:
       "Independent, in-depth reviews and comparisons of the best SaaS and business tools. No pay-for-placement. No fluff.",
@@ -149,6 +156,20 @@ export default function RootLayout({
     <html lang="en" className={`${dmSans.variable} h-full`}>
       <head>
         <meta name="impact-site-verification" content="0e4833c9-04d4-435f-940e-7f08b21f218a" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "TopStackTools",
+              url: "https://topstacktools.com",
+              description:
+                "Independent, in-depth reviews and comparisons of the best SaaS and business tools.",
+              sameAs: [],
+            }),
+          }}
+        />
       </head>
       <body className="min-h-full flex flex-col font-sans antialiased">
         <Navbar />
