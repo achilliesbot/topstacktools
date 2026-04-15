@@ -1,0 +1,21 @@
+2026-04-15 08:00:02 UTC — Starting article generation for: "best Notion templates for small business"
+Generating article for: "best Notion templates for small business"
+  Calling Claude API for article content...
+  Anthropic error (No module named 'anthropic'), falling back to OpenAI...
+  Generated via OpenAI (gpt-4o-mini)
+  Generating title and meta description...
+  Article saved: top-notion-templates-for-small-businesses-to-boost-productivity
+  Added /blog/top-notion-templates-for-small-businesses-to-boost-productivity to sitemap.xml
+  Running npm run build...
+  Build succeeded. Restarting Next.js server...
+  Next.js server restarting on port 3001
+
+Article published successfully!
+  Title: Top Notion Templates for Small Businesses to Boost Productivity
+  Slug: top-notion-templates-for-small-businesses-to-boost-productivity
+  Category: Project Management
+  Related tools: notion, systeme-io
+  URL: https://topstacktools.com/blog/top-notion-templates-for-small-businesses-to-boost-productivity
+{"slug": "top-notion-templates-for-small-businesses-to-boost-productivity", "title": "Top Notion Templates for Small Businesses to Boost Productivity", "url": "https://topstacktools.com/blog/top-notion-templates-for-small-businesses-to-boost-productivity"}
+2026-04-15 08:00:46 UTC — SUCCESS: Article generated for "best Notion templates for small business"
+---
