@@ -1,34 +1,36 @@
 #!/bin/bash
-# TopStackTools Backlink Submitter — submits site to free web directories
+# TopStackTools Backlink Submitter — submits all articles to IndexNow
 LOG="/tmp/backlink-submitter.log"
 DATE=$(date +%Y-%m-%d)
+ARTICLES_JSON="/home/ubuntu/topstacktools/src/data/articles.json"
 
 echo "[$DATE] Backlink submitter starting..." >> $LOG
 
-# Ping search engines with individual article URLs
-URLS=(
+# Static URLs
+STATIC_URLS=(
   "https://topstacktools.com"
   "https://topstacktools.com/blog"
-  "https://topstacktools.com/blog/best-free-crm-2026"
-  "https://topstacktools.com/blog/systeme-io-review-2026"
-  "https://topstacktools.com/blog/best-website-builder-small-business"
-  "https://topstacktools.com/blog/notion-vs-monday-2026"
-  "https://topstacktools.com/blog/best-seo-tools-2026"
-  "https://topstacktools.com/blog/best-email-marketing-tools-small-business-2026"
-  "https://topstacktools.com/blog/systeme-io-vs-clickfunnels-2026"
-  "https://topstacktools.com/blog/best-project-management-tools-startups-2026"
-  "https://topstacktools.com/blog/how-to-build-a-website-for-free-2026"
-  "https://topstacktools.com/blog/best-all-in-one-business-platforms-solopreneurs-2026"
-  "https://topstacktools.com/blog/best-ai-agent-security-tools-2026"
-  "https://topstacktools.com/blog/best-ai-writing-tools-seo-2026"
-  "https://topstacktools.com/blog/best-free-ai-tools-solopreneurs-2026"
-  "https://topstacktools.com/blog/best-printable-productivity-templates-2026"
-  "https://topstacktools.com/blog/best-accounting-software-small-business-2026"
-  "https://topstacktools.com/blog/best-social-media-management-tools-2026"
+  "https://topstacktools.com/reviews/hubspot-crm"
+  "https://topstacktools.com/reviews/systeme-io"
+  "https://topstacktools.com/reviews/semrush"
+  "https://topstacktools.com/comparisons/notion-vs-monday"
+  "https://topstacktools.com/comparisons/hubspot-vs-salesforce"
 )
 
-# Submit each URL individually to IndexNow
-for URL in "${URLS[@]}"; do
+# Submit static URLs
+for URL in "${STATIC_URLS[@]}"; do
+  curl -s "https://api.indexnow.org/indexnow?url=${URL}&key=topstacktools2026" -o /dev/null -w "IndexNow $URL: %{http_code}\n" >> $LOG
+done
+
+# Dynamically extract all article slugs from articles.json and submit
+python3 -c "
+import json
+with open('$ARTICLES_JSON') as f:
+    articles = json.load(f)
+for a in articles:
+    print(a['slug'])
+" | while read SLUG; do
+  URL="https://topstacktools.com/blog/${SLUG}"
   curl -s "https://api.indexnow.org/indexnow?url=${URL}&key=topstacktools2026" -o /dev/null -w "IndexNow $URL: %{http_code}\n" >> $LOG
 done
 
