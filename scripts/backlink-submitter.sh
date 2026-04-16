@@ -23,6 +23,8 @@ URLS=(
   "https://topstacktools.com/blog/best-ai-writing-tools-seo-2026"
   "https://topstacktools.com/blog/best-free-ai-tools-solopreneurs-2026"
   "https://topstacktools.com/blog/best-printable-productivity-templates-2026"
+  "https://topstacktools.com/blog/best-accounting-software-small-business-2026"
+  "https://topstacktools.com/blog/best-social-media-management-tools-2026"
 )
 
 # Submit each URL individually to IndexNow

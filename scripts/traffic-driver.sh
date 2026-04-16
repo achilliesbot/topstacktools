@@ -34,7 +34,9 @@ curl -s -X POST "https://api.indexnow.org/IndexNow" \
       "https://topstacktools.com/blog/best-all-in-one-business-platforms-solopreneurs-2026",
       "https://topstacktools.com/blog/best-ai-agent-security-tools-2026",
       "https://topstacktools.com/blog/best-ai-writing-tools-seo-2026",
-      "https://topstacktools.com/blog/best-printable-productivity-templates-2026"
+      "https://topstacktools.com/blog/best-printable-productivity-templates-2026",
+      "https://topstacktools.com/blog/best-accounting-software-small-business-2026",
+      "https://topstacktools.com/blog/best-social-media-management-tools-2026"
     ]
   }' -w "\nIndexNow: %{http_code}" >> $LOG 2>&1
 
