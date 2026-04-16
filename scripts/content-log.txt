@@ -19,3 +19,45 @@ Article published successfully!
 {"slug": "top-notion-templates-for-small-businesses-to-boost-productivity", "title": "Top Notion Templates for Small Businesses to Boost Productivity", "url": "https://topstacktools.com/blog/top-notion-templates-for-small-businesses-to-boost-productivity"}
 2026-04-15 08:00:46 UTC — SUCCESS: Article generated for "best Notion templates for small business"
 ---
+2026-04-15 16:00:01 UTC — Starting article generation for: "best Notion templates for small business"
+Generating article for: "best Notion templates for small business"
+  Calling Claude API for article content...
+  Anthropic error (No module named 'anthropic'), falling back to OpenAI...
+  Generated via OpenAI (gpt-4o-mini)
+  Generating title and meta description...
+  Article saved: top-notion-templates-every-small-business-needs-to-succeed
+  Added /blog/top-notion-templates-every-small-business-needs-to-succeed to sitemap.xml
+  Running npm run build...
+  Build succeeded. Restarting Next.js server...
+  Next.js server restarting on port 3001
+
+Article published successfully!
+  Title: Top Notion Templates Every Small Business Needs to Succeed
+  Slug: top-notion-templates-every-small-business-needs-to-succeed
+  Category: Project Management
+  Related tools: notion, systeme-io
+  URL: https://topstacktools.com/blog/top-notion-templates-every-small-business-needs-to-succeed
+{"slug": "top-notion-templates-every-small-business-needs-to-succeed", "title": "Top Notion Templates Every Small Business Needs to Succeed", "url": "https://topstacktools.com/blog/top-notion-templates-every-small-business-needs-to-succeed"}
+2026-04-15 16:01:04 UTC — SUCCESS: Article generated for "best Notion templates for small business"
+---
+2026-04-16 08:00:01 UTC — Starting article generation for: "how to build a sales funnel for free"
+Generating article for: "how to build a sales funnel for free"
+  Calling Claude API for article content...
+  Anthropic error (No module named 'anthropic'), falling back to OpenAI...
+  Generated via OpenAI (gpt-4o-mini)
+  Generating title and meta description...
+  Article saved: how-to-build-a-sales-funnel-for-free-step-by-step-guide
+  Added /blog/how-to-build-a-sales-funnel-for-free-step-by-step-guide to sitemap.xml
+  Running npm run build...
+  Build succeeded. Restarting Next.js server...
+  Next.js server restarting on port 3001
+
+Article published successfully!
+  Title: How to Build a Sales Funnel for Free: Step-by-Step Guide
+  Slug: how-to-build-a-sales-funnel-for-free-step-by-step-guide
+  Category: Marketing
+  Related tools: hubspot-crm, systeme-io
+  URL: https://topstacktools.com/blog/how-to-build-a-sales-funnel-for-free-step-by-step-guide
+{"slug": "how-to-build-a-sales-funnel-for-free-step-by-step-guide", "title": "How to Build a Sales Funnel for Free: Step-by-Step Guide", "url": "https://topstacktools.com/blog/how-to-build-a-sales-funnel-for-free-step-by-step-guide"}
+2026-04-16 08:00:51 UTC — SUCCESS: Article generated for "how to build a sales funnel for free"
+---
